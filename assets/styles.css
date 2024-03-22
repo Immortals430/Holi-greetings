@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url('./img/background.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+
+/* sayari section */
+.sayari-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    min-height: 422px;
+    padding: 0 15px;
+}
+
+.sayari{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 100%;
+    min-width: 215px;
+    max-width: 400px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h1>img{
+    width: 250px;
+}
+
+.sayari>p{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 50px;
+}
+
+
+/* buttons */
+.prev, .next{
+    width: 80px;
+
+}
+
+.prev > img, .next > img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* characters */
+.char{
+    position: fixed;
+}
+
+.char > img {
+    width: 100%;
+}
+
+.char1{
+    width: 160px;
+    bottom: 10px;
+    right: 20px;
+}
+
+.char2{
+    width: 160px;
+    bottom: 325px;
+    margin-right: 800px;
+}
+
+.char3{
+    margin: auto;
+    width: 350px;
+    top: 10px;
+}
+
+.char4{
+    margin-left: 900px;
+    width: 200px;
+    top: 80px;
+}
+
+.char5{
+    margin-right: 1060px;
+    width: 250px;
+    bottom: -8px;
+}
+
+
+/* responsive */
+@media only screen and (max-width: 500px) {
+    .logo{
+        width: 150px;
+    }
+
+    .sayari>p{
+        font-size: 1rem;
+    }
+  }
